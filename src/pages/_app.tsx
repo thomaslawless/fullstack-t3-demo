@@ -19,3 +19,5 @@ const MyApp: AppType<{ session: Session | null }> = ({
 
 export default api.withTRPC(MyApp);
 // export 
+
+/// connect db to supabase
