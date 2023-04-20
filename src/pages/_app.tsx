@@ -5,6 +5,8 @@ import { SessionProvider } from "next-auth/react";
 import { api } from "~/utils/api";
 
 import "~/styles/globals.css";
+import { createClient } from '@supabase/supabase-js'
+const supabase = createClient('https://xyzcompany.supabase.co', 'public-anon-key')
 
 const MyApp: AppType<{ session: Session | null }> = ({
   Component,
